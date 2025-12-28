@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barrio Bites - Authentic Street Flavors</title>
+    <title>Lost Pines Food Truck - Hill Country Smoke &amp; Fire</title>
 
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,37 +11,35 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* Custom styles to inject the barrio theme */
+        /* Custom styles to inject the Lost Pines theme */
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #FDF8E1; /* Creamy background */
+            font-family: 'Work Sans', sans-serif;
+            background-color: #F5F1E6;
         }
 
-        /* Using the 'Bangers' font for a comic/mural-like feel */
+        /* Using the 'Rye' font for a rugged, wood-stamp feel */
         h1, h2, h3, .bangers-font {
-            font-family: 'Bangers', cursive;
-            letter-spacing: 2px;
+            font-family: 'Rye', cursive;
+            letter-spacing: 1px;
         }
 
         /* Custom gradient for headers and buttons */
-        .bg-barrio-gradient {
-            background: linear-gradient(to right, #FF6B6B, #FFC145); /* Sunset-like gradient */
+        .bg-pines-gradient {
+            background-color: #2F6B4F;
         }
-        .text-barrio-gradient {
-            background: linear-gradient(to right, #FF6B6B, #FFC145);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .text-pines-gradient {
+            color: #2F6B4F;
         }
 
         /* Hero section background image */
         .hero-section {
-            background-color: black;
+            background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -78,12 +76,12 @@
     <!-- Header & Navigation -->
     <header class="bg-white/80 backdrop-blur-md shadow-lg sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-3xl bangers-font text-barrio-gradient">Barrio Bites</a>
+            <a href="#" class="text-3xl bangers-font text-pines-gradient">Lost Pines</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#menu" class="text-gray-800 hover:text-red-500 transition">Menu</a>
-                <a href="#story" class="text-gray-800 hover:text-red-500 transition">Our Story</a>
-                <a href="#find-us" class="text-gray-800 hover:text-red-500 transition">Find Us</a>
-                <a href="#catering" class="text-gray-800 hover:text-red-500 transition">Catering</a>
+                <a href="#menu" class="text-gray-800 hover:text-amber-600 transition">Menu</a>
+                <a href="#story" class="text-gray-800 hover:text-amber-600 transition">Our Story</a>
+                <a href="#find-us" class="text-gray-800 hover:text-amber-600 transition">Find Us</a>
+                <a href="#catering" class="text-gray-800 hover:text-amber-600 transition">Catering</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-2xl">
                 <i class="fas fa-bars"></i>
@@ -91,19 +89,19 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <a href="#menu" class="block py-2 px-4 text-sm hover:bg-gray-200">Menu</a>
-            <a href="#story" class="block py-2 px-4 text-sm hover:bg-gray-200">Our Story</a>
-            <a href="#find-us" class="block py-2 px-4 text-sm hover:bg-gray-200">Find Us</a>
-            <a href="#catering" class="block py-2 px-4 text-sm hover:bg-gray-200">Catering</a>
+            <a href="#menu" class="block py-2 px-4 text-sm hover:bg-amber-50">Menu</a>
+            <a href="#story" class="block py-2 px-4 text-sm hover:bg-amber-50">Our Story</a>
+            <a href="#find-us" class="block py-2 px-4 text-sm hover:bg-amber-50">Find Us</a>
+            <a href="#catering" class="block py-2 px-4 text-sm hover:bg-amber-50">Catering</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section text-white h-[60vh] flex items-center justify-center text-center">
         <div class="z-10">
-            <h1 class="text-6xl md:text-8xl font-bold drop-shadow-lg">FLAVOR & FAMILIA</h1>
-            <p class="mt-4 text-lg md:text-2xl">Bringing authentic street food from our family to yours.</p>
-            <a href="#menu" class="mt-8 inline-block bg-barrio-gradient text-white py-3 px-8 rounded-full text-xl bangers-font hover:scale-105 transition transform shadow-lg">Taste The Culture</a>
+            <h1 class="text-6xl md:text-8xl font-bold drop-shadow-lg">SMOKE. SPICE. PINES.</h1>
+            <p class="mt-4 text-lg md:text-2xl">Hill Country flavors, slow-smoked and served under the tall pines.</p>
+            <a href="#menu" class="mt-8 inline-block bg-pines-gradient text-white py-3 px-8 rounded-full text-xl bangers-font hover:scale-105 transition transform shadow-lg">Explore The Menu</a>
         </div>
     </section>
 
@@ -112,33 +110,33 @@
 
         <!-- Menu Section -->
         <section id="menu" class="my-16">
-            <h2 class="text-5xl text-center mb-12 text-barrio-gradient">Our Menu</h2>
+            <h2 class="text-5xl text-center mb-12 text-pines-gradient">Our Menu</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Menu Item 1 -->
                 <div class="bg-white rounded-lg overflow-hidden menu-card">
-                    <img src="https://placehold.co/600x400/FF6B6B/FFFFFF?text=Barrio+Tacos" alt="Barrio Tacos" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/600x400/2F6B4F/FFFFFF?text=Brisket+Tacos" alt="Brisket Tacos" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl text-gray-800">Barrio Tacos</h3>
-                        <p class="mt-2 text-gray-600">Three corn tortillas filled with your choice of carne asada, al pastor, or pollo, topped with cilantro and onion.</p>
-                        <div class="mt-4 text-2xl bangers-font text-green-600">$10.00</div>
+                        <h3 class="text-2xl text-gray-800">Lost Pines Brisket Tacos</h3>
+                        <p class="mt-2 text-gray-600">Three flour tortillas loaded with oak-smoked brisket, pickled onions, and jalapeno slaw.</p>
+                        <div class="mt-4 text-2xl bangers-font text-green-600">$12.00</div>
                     </div>
                 </div>
                 <!-- Menu Item 2 -->
                 <div class="bg-white rounded-lg overflow-hidden menu-card">
-                    <img src="https://placehold.co/600x400/FFC145/FFFFFF?text=El+Jefe+Burrito" alt="El Jefe Burrito" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/600x400/C47B2E/FFFFFF?text=Pine+Cone+Quesadilla" alt="Pine Cone Quesadilla" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl text-gray-800">El Jefe Burrito</h3>
-                        <p class="mt-2 text-gray-600">A giant flour tortilla stuffed with rice, beans, cheese, salsa, and your choice of meat. Big enough to share!</p>
-                        <div class="mt-4 text-2xl bangers-font text-green-600">$14.00</div>
+                        <h3 class="text-2xl text-gray-800">Pine Cone Quesadilla</h3>
+                        <p class="mt-2 text-gray-600">Chipotle chicken, roasted peppers, and melty cheddar with a drizzle of smoky honey.</p>
+                        <div class="mt-4 text-2xl bangers-font text-green-600">$11.00</div>
                     </div>
                 </div>
                 <!-- Menu Item 3 -->
                 <div class="bg-white rounded-lg overflow-hidden menu-card">
-                    <img src="https://placehold.co/600x400/4ECDC4/FFFFFF?text=Loaded+Nachos" alt="Loaded Nachos" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/600x400/3C5A3A/FFFFFF?text=Trailhead+Nachos" alt="Trailhead Nachos" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl text-gray-800">Loaded Nachos</h3>
-                        <p class="mt-2 text-gray-600">Crispy tortilla chips smothered in nacho cheese, jalapeños, pico de gallo, sour cream, and guacamole.</p>
-                        <div class="mt-4 text-2xl bangers-font text-green-600">$12.00</div>
+                        <h3 class="text-2xl text-gray-800">Trailhead Nachos</h3>
+                        <p class="mt-2 text-gray-600">House chips piled high with brisket, queso, charred corn, and smoked salsa verde.</p>
+                        <div class="mt-4 text-2xl bangers-font text-green-600">$13.00</div>
                     </div>
                 </div>
                  <!-- Add more menu items as needed -->
@@ -148,25 +146,25 @@
         <!-- Our Story Section -->
         <section id="story" class="my-16 bg-white p-8 md:p-12 rounded-lg story-card">
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <img src="https://placehold.co/400x400/333333/FFFFFF?text=Our+Familia" alt="The Barrio Bites Team" class="w-full md:w-1/3 rounded-full border-4 border-yellow-400">
+                <img src="https://placehold.co/400x400/2F6B4F/FFFFFF?text=Our+Crew" alt="The Lost Pines Crew" class="w-full md:w-1/3 rounded-full border-4 border-yellow-400">
                 <div class="md:w-2/3">
-                    <h2 class="text-5xl mb-4 text-barrio-gradient">Nuestra Historia</h2>
-                    <p class="text-lg mb-4">Barrio Bites was born from a dream passed down through generations. Our abuela's recipes, perfected in a small kitchen in our childhood home, are the heart and soul of our menu. We wanted to share the authentic, vibrant flavors of our culture with the streets of Littlefield, TX.</p>
-                    <p class="text-lg">Every taco, every burrito, every plate of nachos is made with love, tradition, and the freshest ingredients. We're more than a food truck; we're a mobile piece of our home, and we invite you to be part of our familia.</p>
+                    <h2 class="text-5xl mb-4 text-pines-gradient">From The Lost Pines</h2>
+                    <p class="text-lg mb-4">Lost Pines Food Truck started as a weekend cookout under the tall pines outside Bastrop. We built our menu around slow smoke, bright Texas spice, and the kind of hospitality you feel on a front porch.</p>
+                    <p class="text-lg">Every plate is made with local ingredients, hand-mixed rubs, and a little campfire soul. Pull up a chair, grab a taco, and stay a while.</p>
                 </div>
             </div>
         </section>
 
         <!-- Find Us Section -->
         <section id="find-us" class="my-16 text-center">
-            <h2 class="text-5xl mb-8 text-barrio-gradient">¿Dónde Estamos?</h2>
+            <h2 class="text-5xl mb-8 text-pines-gradient">Find Us In The Pines</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h3 class="text-3xl mb-4">Our Schedule</h3>
                     <ul class="text-left max-w-md mx-auto space-y-3">
-                        <li class="p-4 bg-white rounded-lg shadow-md"><strong class="text-red-500">Mon-Wed:</strong> Downtown Park, 11am - 7pm</li>
-                        <li class="p-4 bg-white rounded-lg shadow-md"><strong class="text-red-500">Thu-Fri:</strong> Tech Campus, 11am - 9pm</li>
-                        <li class="p-4 bg-white rounded-lg shadow-md"><strong class="text-red-500">Sat-Sun:</strong> Farmers Market, 9am - 4pm</li>
+                        <li class="p-4 bg-white rounded-lg shadow-md"><strong class="text-amber-600">Mon-Wed:</strong> Bastrop Riverwalk, 11am - 7pm</li>
+                        <li class="p-4 bg-white rounded-lg shadow-md"><strong class="text-amber-600">Thu-Fri:</strong> Lost Pines Brewery, 11am - 9pm</li>
+                        <li class="p-4 bg-white rounded-lg shadow-md"><strong class="text-amber-600">Sat-Sun:</strong> Cedar Creek Market, 9am - 3pm</li>
                     </ul>
                      <div class="mt-8">
                         <p class="text-xl mb-4">Follow us for real-time updates!</p>
@@ -179,7 +177,7 @@
                 </div>
                 <div class="w-full h-96 rounded-lg overflow-hidden border-4 border-yellow-400 shadow-lg">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52983.52290457196!2d-102.3668352486328!3d33.916853200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87010f3732b130a1%3A0x6292b89182352862!2sLittlefield%2C%20TX%2079339!5e0!3m2!1sen!2sus!4v1718491515152!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55302.56298209074!2d-97.33452338451233!3d30.10366650372865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b1d9f1f7c88f%3A0x4a1bbf1b0d6a9a6e!2sBastrop%2C%20TX%2078602!5e0!3m2!1sen!2sus!4v1718491515152!5m2!1sen!2sus"
                         width="100%"
                         height="100%"
                         style="border:0;"
@@ -193,21 +191,21 @@
 
         <!-- Catering Section -->
         <section id="catering" class="my-16 bg-white p-8 md:p-12 rounded-lg story-card">
-            <h2 class="text-5xl text-center mb-8 text-barrio-gradient">Fiesta Time!</h2>
-            <p class="text-center text-lg max-w-3xl mx-auto mb-8">Bring the Barrio Bites experience to your next event. We cater parties, weddings, and corporate events. Fill out the form below to get a quote!</p>
+            <h2 class="text-5xl text-center mb-8 text-pines-gradient">Gather Around The Fire</h2>
+            <p class="text-center text-lg max-w-3xl mx-auto mb-8">Bring Lost Pines Food Truck to your next event. We cater weddings, ranch parties, and corporate gatherings. Fill out the form below to get a quote.</p>
             <form class="max-w-2xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-4 mb-4">
-                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-red-400">
-                    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-red-400">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-amber-500">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-amber-500">
                 </div>
                 <div class="mb-4">
-                    <input type="text" placeholder="Event Type (e.g., Wedding, Birthday)" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-red-400">
+                    <input type="text" placeholder="Event Type (e.g., Wedding, Birthday)" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-amber-500">
                 </div>
                 <div class="mb-4">
-                    <textarea placeholder="Tell us about your event..." rows="4" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-red-400"></textarea>
+                    <textarea placeholder="Tell us about your event..." rows="4" class="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:border-amber-500"></textarea>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="bg-barrio-gradient text-white py-3 px-10 rounded-full text-xl bangers-font hover:scale-105 transition transform shadow-lg">Request a Quote</button>
+                    <button type="submit" class="bg-pines-gradient text-white py-3 px-10 rounded-full text-xl bangers-font hover:scale-105 transition transform shadow-lg">Request a Quote</button>
                 </div>
             </form>
         </section>
@@ -216,9 +214,9 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white p-8">
         <div class="container mx-auto text-center">
-            <p class="bangers-font text-2xl text-yellow-400">Barrio Bites</p>
-            <p class="mt-2">&copy; 2025 Barrio Bites. All Rights Reserved.</p>
-            <p>Made with <i class="fas fa-heart text-red-500"></i> in Littlefield, TX</p>
+            <p class="bangers-font text-2xl text-yellow-400">Lost Pines Food Truck</p>
+            <p class="mt-2">&copy; 2025 Lost Pines Food Truck. All Rights Reserved.</p>
+            <p>Made with <i class="fas fa-heart text-red-500"></i> in Bastrop, TX</p>
             <p class="mt-2">Website by <a href="https://bastropcode.com" class="text-yellow-400 hover:text-white transition">BastropCode.com</a></p>
             <div class="mt-4 flex justify-center space-x-4 text-2xl">
                  <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
